@@ -1,14 +1,15 @@
-import "./navbar.css"
+import styles from "./navbar.module.scss"
 
 const Navbar = () => {
   return (
-    <nav className="container_nav">
-        <ul className="container_list">
-            <li>Inicio</li>
-            <li>Nacionales</li>
-            <li>Internacionales</li>
-            <li>Contacto</li>
+    <nav className={styles.container}>
+        <ul>
+            <li>INICIO</li>
+            <li>NACIONALES</li>
+            <li>INTERNACIONALES</li>
+            <li>CONTACTO</li>
         </ul>
+        <h1>NOMADES TURISMO</h1>
     </nav>
   )
 }

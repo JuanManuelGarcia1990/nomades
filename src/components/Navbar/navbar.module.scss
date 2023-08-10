@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    background-color: aqua;
+    color: brown;
+    justify-content: space-around;
+    &:hover {
+        background-color: black;
+    }
+}
