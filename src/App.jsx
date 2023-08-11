@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
 <Navbar />
-
+<h1>Nomades Turismo</h1>
     </div>
   );
 }
