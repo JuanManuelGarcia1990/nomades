@@ -1,16 +1,12 @@
+import { Link } from "react-router-dom";
 import styles from "./navbar.module.scss";
 
-const Navbar = ({ icono }) => {
+const Navbar = () => {
   return (
     <nav className={styles.container}>
-      <ul>
-        <li>INICIO</li>
-        <li>NACIONALES</li>
-        <li>INTERNACIONALES</li>
-        <li>CONTACTO</li>
-      </ul>
-      <img src={icono} alt="" width="40" height= "40"/>
-      <h1>NOMADES TURISMO</h1>
+      <Link to="/inicio">Inicio</Link>
+      <Link to="/nacionales">Nacionales</Link>
+      <Link to="/internacionales">Internacionales</Link>
     </nav>
   );
 };
