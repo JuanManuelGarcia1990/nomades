@@ -1,9 +1,10 @@
-import React from 'react'
 
 const Inicio = () => {
   return (
-    <div>Inicio</div>
-  )
-}
+    <div>
+      <h2>Bienvenidos a nomades turismo</h2>
+    </div>
+  );
+};
 
-export default Inicio
+export default Inicio;

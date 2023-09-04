@@ -1,8 +1,16 @@
 .container {
     display: flex;
     background-color: aqua;
-    color: brown;
+    color: white;
     justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    min-height: 10vh;
+    a {
+        color: white;
+        text-decoration: none;
+    }
     &:hover {
         background-color: black;
     }

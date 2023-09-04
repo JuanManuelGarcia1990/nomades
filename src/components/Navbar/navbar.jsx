@@ -1,12 +1,36 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
+  const activeStyle = {
+    color: "red",
+  };
   return (
     <nav className={styles.container}>
-      <Link to="/inicio">Inicio</Link>
-      <Link to="/nacionales">Nacionales</Link>
-      <Link to="/internacionales">Internacionales</Link>
+      <NavLink
+        to="/inicio"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        Inicio
+      </NavLink>
+      <NavLink
+        to="/nacionales"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        Nacionales
+      </NavLink>
+      <NavLink
+        to="/internacionales"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        Internacionales
+      </NavLink>
+      <NavLink
+        to="/contacto"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        Contacto
+      </NavLink>
     </nav>
   );
 };

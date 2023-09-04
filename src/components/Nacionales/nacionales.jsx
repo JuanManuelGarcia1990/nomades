@@ -1,8 +1,6 @@
-import React from 'react'
-
 const Nacionales = () => {
   return (
-    <div>Nacionales</div>
+    <div><h1>Estos son nuestro viajes nacionales</h1></div>
   )
 }
 
