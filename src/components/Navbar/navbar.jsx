@@ -3,7 +3,7 @@ import styles from "./navbar.module.scss";
 
 const Navbar = () => {
   const activeStyle = {
-    color: "red",
+    color: "black",
   };
   return (
     <nav className={styles.container}>

@@ -1,8 +1,10 @@
 import styles from "./header.module.scss";
+import logo from "../../assets/Logo/logo.jpg"
 
 const Header = () => {
   return (
-    <header className={styles.header}>Poner logo, redes y datos</header>
+    <header className={styles.header}>
+      <img src={logo} /></header>
   )
 }
 
