@@ -1,8 +1,10 @@
+import styles from "./inicio.module.scss";
 
 const Inicio = () => {
   return (
-    <div>
-      <h2>Bienvenidos a nomades turismo</h2>
+    <div className={styles.mainContainer}>
+      <h2>Nacionales</h2>
+      <h2>Internacionales</h2>
     </div>
   );
 };

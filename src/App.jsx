@@ -15,7 +15,6 @@ function App() {
     <div>
       <Header />
       <Navbar/>
-      <h1>Nomades Turismo</h1>
       <Routes>
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/" element={<Navigate to="/inicio" />} />
