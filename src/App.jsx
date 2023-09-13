@@ -1,7 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar/navbar";
-import Button from "./components/Button/button";
 import Inicio from "./components/Inicio/inicio";
 import Nacionales from "./components/Nacionales/nacionales";
 import Internacionales from "./components/Internacionales/internacionales";
@@ -22,10 +21,6 @@ function App() {
         <Route path="/internacionales" element={<Internacionales />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
-      
-      <Button texto="home" />
-      <Button texto="about" />
-      <Button texto="contact" />
     </div>
   );
 }
