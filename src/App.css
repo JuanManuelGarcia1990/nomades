@@ -4,18 +4,6 @@
     box-sizing: border-box;
 }
 
-.light {
-    background-color: #5eab81;
-    color: white;
-    a {
-        color: white;
-        text-decoration: none;
-    }
-}
-.dark {
-    background-color: black;
-    color: white;
-}
 /* 
 paleta de colores: #264d74 azul
 5eab81 verde
