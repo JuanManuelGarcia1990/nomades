@@ -6,6 +6,7 @@ import Nacionales from "./components/Nacionales/nacionales";
 import Internacionales from "./components/Internacionales/internacionales";
 import Contacto from "./components/Contacto/contacto";
 import Header from "./components/Header/header";
+import Footer from "./components/Footer/footer";
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/internacionales" element={<Internacionales />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
