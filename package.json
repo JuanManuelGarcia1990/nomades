@@ -22,7 +22,7 @@
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.4",
     "react-router-dom": "^6.15.0",
-    "sass": "^1.66.1"
+    "sass": "^1.68.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
