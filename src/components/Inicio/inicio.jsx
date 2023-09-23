@@ -8,6 +8,7 @@ import faro from "../../assets/Destinos/nacionales/faro.jpg"
 import glaciar from "../../assets/Destinos/nacionales/glaciar.jpg"
 import mendoza from "../../assets/Destinos/nacionales/mendoza.jpg"
 import puertoMadryn from "../../assets/Destinos/nacionales/puertoMadryn.jpg"
+
 import machuPichu from "../../assets/Destinos/internacionales/machuPichu.jpg";
 import egipto from "../../assets/Destinos/internacionales/egipto.jpg"
 import paris from "../../assets/Destinos/internacionales/paris.jpeg"
