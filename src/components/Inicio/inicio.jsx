@@ -1,7 +1,7 @@
 import styles from "./inicio.module.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Button from "../Button/button";
 import cataratas from "../../assets/Destinos/nacionales/cataratas.jpg";
 import cerro from "../../assets/Destinos/nacionales/cerro.jpg";
@@ -15,6 +15,7 @@ import paris from "../../assets/Destinos/internacionales/paris.jpeg";
 import roma from "../../assets/Destinos/internacionales/roma.jpg";
 import rioJaneiro from "../../assets/Destinos/internacionales/rioJaneiro.jpg";
 import caribe from "../../assets/Destinos/internacionales/caribe.jpg";
+
 
 const Inicio = () => {
   const navigate = useNavigate();
@@ -82,7 +83,9 @@ const Inicio = () => {
         </div>
       </Carousel>
       <div className={styles.buttonContainer}>
-        <Button onClick={() => navigate("/nacionales")} texto="Ver Más" />
+        <NavLink to="/nacionales">
+        <Button texto="Ver Más" />
+        </NavLink>
       </div>
 
       <h2>Internacionales</h2>
@@ -116,7 +119,9 @@ const Inicio = () => {
         </div>
       </Carousel>
       <div className={styles.buttonContainer}>
+      <NavLink to="/internacionales">
         <Button texto="Ver Más" />
+        </NavLink>
       </div>
     </div>
   );
