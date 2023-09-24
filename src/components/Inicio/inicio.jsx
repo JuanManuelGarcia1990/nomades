@@ -1,25 +1,23 @@
 import styles from "./inicio.module.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useNavigate } from "react-router-dom";
 import Button from "../Button/button";
-import cataratas from "../../assets/Destinos/nacionales/cataratas.jpg"
-import cerro from "../../assets/Destinos/nacionales/cerro.jpg"
-import faro from "../../assets/Destinos/nacionales/faro.jpg"
-import glaciar from "../../assets/Destinos/nacionales/glaciar.jpg"
-import mendoza from "../../assets/Destinos/nacionales/mendoza.jpg"
-import puertoMadryn from "../../assets/Destinos/nacionales/puertoMadryn.jpg"
-
+import cataratas from "../../assets/Destinos/nacionales/cataratas.jpg";
+import cerro from "../../assets/Destinos/nacionales/cerro.jpg";
+import faro from "../../assets/Destinos/nacionales/faro.jpg";
+import glaciar from "../../assets/Destinos/nacionales/glaciar.jpg";
+import mendoza from "../../assets/Destinos/nacionales/mendoza.jpg";
+import puertoMadryn from "../../assets/Destinos/nacionales/puertoMadryn.jpg";
 import machuPichu from "../../assets/Destinos/internacionales/machuPichu.jpg";
-import egipto from "../../assets/Destinos/internacionales/egipto.jpg"
-import paris from "../../assets/Destinos/internacionales/paris.jpeg"
-import roma from "../../assets/Destinos/internacionales/roma.jpg"
-import rioJaneiro from "../../assets/Destinos/internacionales/rioJaneiro.jpg"
-import caribe from "../../assets/Destinos/internacionales/caribe.jpg"
-
-
-
+import egipto from "../../assets/Destinos/internacionales/egipto.jpg";
+import paris from "../../assets/Destinos/internacionales/paris.jpeg";
+import roma from "../../assets/Destinos/internacionales/roma.jpg";
+import rioJaneiro from "../../assets/Destinos/internacionales/rioJaneiro.jpg";
+import caribe from "../../assets/Destinos/internacionales/caribe.jpg";
 
 const Inicio = () => {
+  const navigate = useNavigate();
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -42,21 +40,33 @@ const Inicio = () => {
   return (
     <div className={styles.mainContainer}>
       <h2>Nacionales</h2>
-      <Carousel responsive={responsive}>
+      <Carousel showDots={true} responsive={responsive}>
         <div className={styles.card}>
           <img className={styles.destinos} src={cataratas} alt="cataratas" />
         </div>
 
         <div className={styles.card}>
-          <img className={styles.destinos} src={cerro} alt="Cerro de los 7 colores" />
+          <img
+            className={styles.destinos}
+            src={cerro}
+            alt="Cerro de los 7 colores"
+          />
         </div>
 
         <div className={styles.card}>
-          <img className={styles.destinos} src={faro} alt="Faro del fin del mundo" />
+          <img
+            className={styles.destinos}
+            src={faro}
+            alt="Faro del fin del mundo"
+          />
         </div>
 
         <div className={styles.card}>
-          <img className={styles.destinos} src={glaciar} alt="Glaciar Perito Moreno" />
+          <img
+            className={styles.destinos}
+            src={glaciar}
+            alt="Glaciar Perito Moreno"
+          />
         </div>
 
         <div className={styles.card}>
@@ -64,16 +74,19 @@ const Inicio = () => {
         </div>
 
         <div className={styles.card}>
-          <img className={styles.destinos} src={puertoMadryn} alt="Puerto Madryn" />
+          <img
+            className={styles.destinos}
+            src={puertoMadryn}
+            alt="Puerto Madryn"
+          />
         </div>
-
       </Carousel>
       <div className={styles.buttonContainer}>
-        <Button texto="Ver Más" />
+        <Button onClick={() => navigate("/nacionales")} texto="Ver Más" />
       </div>
 
       <h2>Internacionales</h2>
-      <Carousel responsive={responsive}>
+      <Carousel showDots={true} responsive={responsive}>
         <div className={styles.card}>
           <img className={styles.destinos} src={egipto} alt="egipto" />
         </div>
@@ -87,7 +100,11 @@ const Inicio = () => {
         </div>
 
         <div className={styles.card}>
-          <img className={styles.destinos} src={rioJaneiro} alt="Rio de janeiro" />
+          <img
+            className={styles.destinos}
+            src={rioJaneiro}
+            alt="Rio de janeiro"
+          />
         </div>
 
         <div className={styles.card}>
@@ -97,7 +114,6 @@ const Inicio = () => {
         <div className={styles.card}>
           <img className={styles.destinos} src={caribe} alt="Caribe" />
         </div>
-
       </Carousel>
       <div className={styles.buttonContainer}>
         <Button texto="Ver Más" />
