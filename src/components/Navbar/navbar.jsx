@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./navbar.module.scss";
+import logo from "../../assets/Logo/logo.jpg";
 
 const Navbar = () => {
   const activeStyle = {
@@ -7,6 +8,7 @@ const Navbar = () => {
   };
   return (
     <nav className={styles.container}>
+      <img src={logo} />
       <NavLink
         to="/inicio"
         style={({ isActive }) => (isActive ? activeStyle : undefined)}
