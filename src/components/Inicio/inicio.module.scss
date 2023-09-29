@@ -1,5 +1,8 @@
 .mainContainer {
-    background: linear-gradient(6deg, #044d76, #5eab81,transparent);
+    top: 40vh;
+    position: relative;
+    background: black;
+    top: 23vh;
     h2 {
         text-align: center;
         padding: 10px;
@@ -15,13 +18,11 @@
 .card {
     display: flex;
     justify-content: center;
-    max-height: 300px;
+    min-height: 150vh;
 }
 .destinos {
-    border: black solid;
-    border-radius: 120px;
     filter: opacity(0.7);
-    width: 80%;
+    width: 100%;
 }
 
 @media (max-width: 700px) {

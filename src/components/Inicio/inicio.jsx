@@ -40,7 +40,6 @@ const Inicio = () => {
   };
   return (
     <div className={styles.mainContainer}>
-      <h2>Nacionales</h2>
       <Carousel showDots={true} responsive={responsive}>
         <div className={styles.card}>
           <img className={styles.destinos} src={cataratas} alt="cataratas" />
@@ -84,42 +83,6 @@ const Inicio = () => {
       </Carousel>
       <div className={styles.buttonContainer}>
         <NavLink to="/nacionales">
-        <Button texto="Ver Más" />
-        </NavLink>
-      </div>
-
-      <h2>Internacionales</h2>
-      <Carousel showDots={true} responsive={responsive}>
-        <div className={styles.card}>
-          <img className={styles.destinos} src={egipto} alt="egipto" />
-        </div>
-
-        <div className={styles.card}>
-          <img className={styles.destinos} src={machuPichu} alt="Machu Pichu" />
-        </div>
-
-        <div className={styles.card}>
-          <img className={styles.destinos} src={paris} alt="Paris" />
-        </div>
-
-        <div className={styles.card}>
-          <img
-            className={styles.destinos}
-            src={rioJaneiro}
-            alt="Rio de janeiro"
-          />
-        </div>
-
-        <div className={styles.card}>
-          <img className={styles.destinos} src={roma} alt="Roma" />
-        </div>
-
-        <div className={styles.card}>
-          <img className={styles.destinos} src={caribe} alt="Caribe" />
-        </div>
-      </Carousel>
-      <div className={styles.buttonContainer}>
-      <NavLink to="/internacionales">
         <Button texto="Ver Más" />
         </NavLink>
       </div>

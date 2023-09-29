@@ -3,13 +3,25 @@
     background-color: black;
     color: white;
     font-size: large;
-    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
-    padding-right: 10px;
+    flex-wrap: nowrap;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     a {
         color: white;
         text-decoration: none;
     }
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.logo {
+    display: flex;
 }
