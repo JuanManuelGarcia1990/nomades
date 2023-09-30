@@ -16,31 +16,37 @@ import roma from "../../assets/Destinos/internacionales/roma.jpg";
 import rioJaneiro from "../../assets/Destinos/internacionales/rioJaneiro.jpg";
 import caribe from "../../assets/Destinos/internacionales/caribe.jpg";
 
-
 const Inicio = () => {
   const navigate = useNavigate();
   const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 1,
-    },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 1,
+      slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 1,
+      slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
+      slidesToSlide: 1, // optional, default to 1.
     },
   };
   return (
     <div className={styles.mainContainer}>
-      <Carousel showDots={true} responsive={responsive}>
+      <Carousel
+        showDots={true}
+        responsive={responsive}
+        autoPlay={true}
+        autoPlaySpeed={2000}
+        customTransition="all 0.9"
+        infinite={true}
+        transitionDuration={500}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+      >
         <div className={styles.card}>
           <img className={styles.destinos} src={cataratas} alt="cataratas" />
         </div>
@@ -83,7 +89,7 @@ const Inicio = () => {
       </Carousel>
       <div className={styles.buttonContainer}>
         <NavLink to="/nacionales">
-        <Button texto="Ver Más" />
+          <Button texto="Ver Más" />
         </NavLink>
       </div>
     </div>

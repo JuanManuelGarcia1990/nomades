@@ -1,7 +1,11 @@
+import styles from "./nacionales.module.scss";
+
 const Nacionales = () => {
   return (
-    <div><h1>Estos son nuestro viajes nacionales</h1></div>
-  )
-}
+    <div className={styles.mainNacionales}>
+      <h1>asdasd</h1>
+    </div>
+  );
+};
 
-export default Nacionales
+export default Nacionales;
