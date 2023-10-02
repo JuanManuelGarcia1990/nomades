@@ -4,16 +4,15 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
-
 const Footer = () => {
   return (
-    <div className={styles.mainFooter}>      <div>
-    <NavLink to="https://www.instagram.com/">
-      <FontAwesomeIcon icon={faInstagram} />
-    </NavLink>
-  </div></div>
-  )
-}
+    <div className={styles.mainFooter}>
+      <NavLink to="https://www.instagram.com/">
+        <FontAwesomeIcon icon={faInstagram} />
+      </NavLink>
+    </div>
+  );
+};
 
 library.add(faInstagram);
-export default Footer
+export default Footer;
