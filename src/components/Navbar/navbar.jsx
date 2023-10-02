@@ -37,6 +37,11 @@ const Navbar = () => {
           Contacto
         </NavLink>
       </div>
+      <div className={styles.burger}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   );
 };

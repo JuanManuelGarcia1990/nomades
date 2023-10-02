@@ -1,8 +1,7 @@
 import styles from "./inicio.module.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { NavLink, useNavigate } from "react-router-dom";
-import Button from "../Button/button";
+import { useNavigate } from "react-router-dom";
 import cataratas from "../../assets/Destinos/nacionales/cataratas.jpg";
 import cerro from "../../assets/Destinos/nacionales/cerro.jpg";
 import faro from "../../assets/Destinos/nacionales/faro.jpg";
@@ -14,7 +13,7 @@ import egipto from "../../assets/Destinos/internacionales/egipto.jpg";
 import paris from "../../assets/Destinos/internacionales/paris.jpeg";
 import roma from "../../assets/Destinos/internacionales/roma.jpg";
 import rioJaneiro from "../../assets/Destinos/internacionales/rioJaneiro.jpg";
-import caribe from "../../assets/Destinos/internacionales/caribe.jpg";
+import Card from "../Card/card";
 
 const Inicio = () => {
   const navigate = useNavigate();
@@ -22,17 +21,17 @@ const Inicio = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1, 
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1, 
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1, 
     },
   };
   return (
@@ -87,11 +86,7 @@ const Inicio = () => {
           />
         </div>
       </Carousel>
-      <div className={styles.buttonContainer}>
-        <NavLink to="/nacionales">
-          <Button texto="Ver Más" />
-        </NavLink>
-      </div>
+      <Card />
     </div>
   );
 };

@@ -1,0 +1,29 @@
+.cardsContainer {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.cardContainer {
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding-inline: 10px;
+    img {
+        max-width: 100%;
+    }
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    a {
+        color:white;
+        text-decoration: none;
+    }
+}
