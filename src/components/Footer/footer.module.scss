@@ -4,4 +4,33 @@
     background-color: black;
     min-height: 20vh;
     border: #5eab81 solid 3px;
+    font-size: xx-large;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    h5 {
+        padding: 15px;
+    }
+    p {
+        padding-top: 15px;
+    }
+}
+.icons {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+        padding-inline: 10px;
+        border-radius: 30px;
+        background-color: rgb(39, 35, 35);
+        color: white;
+        &:hover {
+            color:#5eab81;
+        }
+    }
 }
