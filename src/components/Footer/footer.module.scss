@@ -1,9 +1,8 @@
 .mainFooter {
     top: 23vh;
     position: relative;
-    background-color: black;
+    background-color: #000000b9;
     min-height: 20vh;
-    border: #5eab81 solid 3px;
     font-size: xx-large;
     display: flex;
     color: white;
@@ -15,7 +14,7 @@
         padding: 15px;
     }
     p {
-        padding-top: 15px;
+        padding: 15px;
     }
 }
 .icons {
@@ -25,7 +24,7 @@
     flex-wrap: wrap;
     justify-content: center;
     a {
-        padding-inline: 10px;
+        padding-inline: 15px;
         border-radius: 30px;
         background-color: rgb(39, 35, 35);
         color: white;

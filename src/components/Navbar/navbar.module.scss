@@ -2,7 +2,7 @@
     display: flex;
     background-color: black;
     color: white;
-    font-size: large;
+    font-size: x-large;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
@@ -14,8 +14,6 @@
         text-decoration: none;
         &:hover {
             text-decoration: underline;
-            transition: .2s;
-            text-transform: uppercase;
         }
     }
 }
