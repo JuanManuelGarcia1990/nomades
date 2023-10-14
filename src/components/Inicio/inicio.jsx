@@ -2,36 +2,31 @@ import styles from "./inicio.module.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useNavigate } from "react-router-dom";
-import cataratas from "../../assets/Destinos/nacionales/cataratas.jpg";
-import cerro from "../../assets/Destinos/nacionales/cerro.jpg";
-import faro from "../../assets/Destinos/nacionales/faro.jpg";
-import glaciar from "../../assets/Destinos/nacionales/glaciar.jpg";
-import mendoza from "../../assets/Destinos/nacionales/mendoza.jpg";
-import puertoMadryn from "../../assets/Destinos/nacionales/puertoMadryn.jpg";
-import machuPichu from "../../assets/Destinos/internacionales/machuPichu.jpg";
-import egipto from "../../assets/Destinos/internacionales/egipto.jpg";
-import paris from "../../assets/Destinos/internacionales/paris.jpeg";
-import roma from "../../assets/Destinos/internacionales/roma.jpg";
-import rioJaneiro from "../../assets/Destinos/internacionales/rioJaneiro.jpg";
-import Card from "../Card/card";
+import universo from "../../assets/ImgsCarousel/universo.png";
+import explora from "../../assets/ImgsCarousel/explora.png";
+import fitzroy from "../../assets/ImgsCarousel/fitzroy.png";
+import glaciar from "../../assets/ImgsCarousel/glaciar.png";
+import lagosarg from "../../assets/ImgsCarousel/lagosarg.png";
 
+import Card from "../Card/card";
+//1366 x768
 const Inicio = () => {
   const navigate = useNavigate();
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 1,
-      slidesToSlide: 1, 
+      slidesToSlide: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 1,
-      slidesToSlide: 1, 
+      slidesToSlide: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-      slidesToSlide: 1, 
+      slidesToSlide: 1,
     },
   };
   return (
@@ -47,23 +42,23 @@ const Inicio = () => {
         removeArrowOnDeviceType={["tablet", "mobile"]}
       >
         <div className={styles.card}>
-          <img className={styles.destinos} src={cataratas} alt="cataratas" />
-        </div>
-
-        <div className={styles.card}>
           <img
             className={styles.destinos}
-            src={cerro}
-            alt="Cerro de los 7 colores"
+            src={universo}
+            alt="Un universo esperándote"
           />
         </div>
 
         <div className={styles.card}>
           <img
             className={styles.destinos}
-            src={faro}
-            alt="Faro del fin del mundo"
+            src={explora}
+            alt="Explora y descubrí"
           />
+        </div>
+
+        <div className={styles.card}>
+          <img className={styles.destinos} src={fitzroy} alt="Fitzroy" />
         </div>
 
         <div className={styles.card}>
@@ -75,14 +70,10 @@ const Inicio = () => {
         </div>
 
         <div className={styles.card}>
-          <img className={styles.destinos} src={mendoza} alt="Mendoza" />
-        </div>
-
-        <div className={styles.card}>
           <img
             className={styles.destinos}
-            src={puertoMadryn}
-            alt="Puerto Madryn"
+            src={lagosarg}
+            alt="Lagos Argentinos"
           />
         </div>
       </Carousel>

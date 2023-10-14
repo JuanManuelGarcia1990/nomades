@@ -27,3 +27,15 @@
         text-decoration: none;
     }
 }
+
+@media (max-width: 750px) {
+    .cardContainer {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .cardContainer {
+        max-width: 100%;
+    }
+}
